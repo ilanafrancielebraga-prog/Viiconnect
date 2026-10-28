@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" fill="none" role="img" aria-label="VII CONNECT Logo">
+  <defs>
+    <linearGradient id="vii-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7FF32" />
+      <stop offset="35%" stop-color="#25D5E8" />
+      <stop offset="70%" stop-color="#477BFF" />
+      <stop offset="100%" stop-color="#A943F5" />
+    </linearGradient>
+    <filter id="vii-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- VII Symbol -->
+  <g id="symbol-vii" filter="url(#vii-glow)">
+    <!-- V Stroke 1 (Left diagonal) -->
+    <path d="M12 18 L26 18 L46 62 L32 62 Z" fill="url(#vii-gradient)" />
+    <!-- V Stroke 2 (Right diagonal) -->
+    <path d="M42 62 L56 62 L74 18 L60 18 Z" fill="url(#vii-gradient)" />
+    <!-- First I Stroke (Slanted sleek bar) -->
+    <path d="M86 18 L99 18 L87 62 L74 62 Z" fill="url(#vii-gradient)" />
+    <!-- Second I Stroke (Slanted sleek bar) -->
+    <path d="M109 18 L122 18 L110 62 L97 62 Z" fill="url(#vii-gradient)" />
+  </g>
+
+  <!-- Wordmark CONNECT -->
+  <text x="142" y="54" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" letter-spacing="4">CONNECT</text>
+</svg>

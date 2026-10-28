@@ -1,0 +1,6 @@
+{
+  "name": "VII CONNECT — Conecta o que importa",
+  "description": "VII CONNECT — Chips com planos de telefonia e oportunidade comercial para revendedores. Conecte o que importa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

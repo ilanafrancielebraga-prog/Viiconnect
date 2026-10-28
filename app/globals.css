@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-black: #050505;
+    --text-white: #ffffff;
+    --brand-lime: #D7FF32;
+    --brand-cyan: #25D5E8;
+    --brand-blue: #477BFF;
+    --brand-purple: #A943F5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #050505;
+    color: #ffffff;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #050505;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #25D5E8;
+    color: #050505;
+  }
+}
+
+/* Custom VII brand gradient helper classes */
+.bg-vii-gradient {
+  background: linear-gradient(135deg, #D7FF32 0%, #25D5E8 35%, #477BFF 70%, #A943F5 100%);
+}
+
+.text-vii-gradient {
+  background: linear-gradient(135deg, #D7FF32 0%, #25D5E8 35%, #477BFF 70%, #A943F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-vii-gradient {
+  border-image: linear-gradient(135deg, #D7FF32, #25D5E8, #477BFF, #A943F5) 1;
+}
+
+/* Diagonal line subtle background overlay */
+.bg-diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.015),
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+}
+
+/* Subtle glow effects */
+.glow-vii {
+  box-shadow: 0 0 40px -10px rgba(37, 213, 232, 0.25);
+}
+
+.glow-vii-lime {
+  box-shadow: 0 0 35px -8px rgba(215, 255, 50, 0.25);
+}
